@@ -1,19 +1,22 @@
 {
   "name": "bookshop",
   "version": "1.0.1",
-  "description": "",
+  "private": true,
+  "description": "IBM Book Review final project with session JWT authentication and Axios clients",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+  "engines": {
+    "node": ">=18"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test",
+    "client": "node router/general.js"
+  },
+  "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "jsonwebtoken": "^8.5.1",
-    "nodemon": "^2.0.19"
+    "axios": "^1.12.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.2"
   }
 }
